@@ -1,0 +1,9 @@
+#!/bin/env ansible-playbook
+---
+- hosts: 127.0.0.1
+  connection: local
+  become: false
+  tasks:
+    - name: Print message
+      ansible.builtin.debug:
+        msg: Hello World!

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ansible-bug"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ansible = "==7.2.0"
+ansible-lint = {version = "==6.13.1", markers = 'platform_system != "Windows"'}
+jmespath = "1.0.1"
+passlib = "1.7.4"
+selinux = "0.3.0"
+six = "1.16.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
